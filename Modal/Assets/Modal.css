@@ -1,0 +1,79 @@
+body{
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+.click-me{
+	font-size: 3em;
+	font-weight: bold;
+  width:200px;
+  height:1.3em;
+  margin-top:6em;
+  background-color: red;
+  color:white;
+  border-style: none;
+  letter-spacing: -.04em;
+  border-radius: 5px;
+}
+
+.click-me:hover{
+  background-color: white;
+  color:red;
+  border-style:solid;
+  border-color:red;
+  border-width: thin;
+}
+
+
+.modal-container{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color:rgba(0,0,0,0);
+}
+
+.modal-container.showing {
+  display:block;
+}
+
+.modal{
+  position:fixed;
+  top:4em;
+  left:0;
+  right:0;
+  bottom: 4em;
+  background-color:rgba(0,0,0,0.8);
+
+}
+
+.message{
+  font-size: 10vw;
+	font-weight: bold;
+  color:white;
+  letter-spacing: -.04em;
+  display:inline-block;
+  margin-top:2em;
+  border-style:none;
+  border-color:white;
+  border-width: thin;
+  width:90%;
+}
+
+p{
+  color:white;
+  letter-spacing:0em;
+}
+
+.exit-modal{
+  position: absolute;
+  top:.5em;
+  right:.5em;
+  font-size:3em;
+  background-color:rgba(0,0,0,0);
+  border-style:none;
+  color:white;
+}
