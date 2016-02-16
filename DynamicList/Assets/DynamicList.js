@@ -17,13 +17,14 @@
 // var = list.lastElementChild;
 
 var items = document.getElementById("list");
-
+var last = items.lastElementChild;
 
 box.onkeydown = function() {
 
   if( box.value.length === 0){
     $("#list").append("<li><input class='box1' id='write' maxlength='25'></li>");
     // $("#list").append("<li><input class='box1' id='write' maxlength='25'></li>");
+    // items.removeChild(last);
     console.log(box.value.length);
     console.log("One");
 
@@ -34,7 +35,7 @@ box.onkeydown = function() {
 box.onkeyup = function() {
 
   if( box.value.length === 0){
-    items.remove("items.lastElementChild");
+    items.removeChild(last);
     console.log(box.value.length);
 
   };
